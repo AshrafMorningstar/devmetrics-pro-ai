@@ -2,6 +2,8 @@
 
 First off, thank you for considering contributing to DevMetrics Pro AI! 🎉
 
+**Created by AshrafMorningstar** - https://github.com/AshrafMorningstar
+
 ## 📋 Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
@@ -12,35 +14,38 @@ First off, thank you for considering contributing to DevMetrics Pro AI! 🎉
 
 ## 🤝 Code of Conduct
 
-This project and everyone participating in it is governed by respect and professionalism. Please be kind and courteous.
+This project follows a simple code of conduct:
 
-## 💡 How Can I Contribute?
+- Be respectful and inclusive
+- Provide constructive feedback
+- Focus on what's best for the community
+- Show empathy towards other contributors
+
+## 🎯 How Can I Contribute?
 
 ### Reporting Bugs
 
-Before creating bug reports, please check existing issues. When creating a bug report, include:
+- Use the GitHub Issues page
+- Include a clear title and description
+- Provide steps to reproduce
+- Include screenshots/videos if applicable
+- Mention your environment (OS, Node version, etc.)
 
-- **Clear title and description**
-- **Steps to reproduce**
-- **Expected vs actual behavior**
-- **Screenshots** (if applicable)
-- **Environment details** (OS, Node version, etc.)
+### Suggesting Features
 
-### Suggesting Enhancements
+- Open an issue with the `enhancement` label
+- Clearly describe the feature and its benefits
+- Provide examples or mockups if possible
 
-Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion, include:
+### Code Contributions
 
-- **Clear use case**
-- **Why this enhancement would be useful**
-- **Possible implementation approach**
-
-### Pull Requests
-
-1. Fork the repo and create your branch from `main`
-2. If you've added code that should be tested, add tests
-3. Ensure the test suite passes
-4. Make sure your code lints
-5. Issue that pull request!
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
+3. **Make your changes**
+4. **Test thoroughly**
+5. **Commit with clear messages** (`git commit -m 'feat: Add amazing feature'`)
+6. **Push to your fork** (`git push origin feature/AmazingFeature`)
+7. **Open a Pull Request**
 
 ## 🛠️ Development Setup
 
@@ -52,114 +57,152 @@ cd devmetrics-pro-ai
 # Install dependencies
 npm install
 
-# Create .env.local
+# Create environment file
 cp .env.example .env.local
 # Add your API keys
 
 # Start development
-npm run dev
-npm run studio
+npm run dev        # Next.js dev server
+npm run studio     # Remotion studio
 ```
 
-## 🔄 Pull Request Process
+## 📝 Pull Request Process
 
-1. **Update Documentation**: Update the README.md with details of changes if needed
-2. **Follow Code Style**: Ensure your code follows the existing style
-3. **Test Thoroughly**: Make sure all existing tests pass and add new ones if needed
-4. **Descriptive Commits**: Use clear and descriptive commit messages
-5. **Link Issues**: Reference any related issues in your PR description
+1. **Update documentation** if you're changing functionality
+2. **Add tests** for new features
+3. **Ensure all tests pass** (`npm run lint`)
+4. **Update the README.md** with details of changes if needed
+5. **Follow the commit message convention**:
+   - `feat:` New feature
+   - `fix:` Bug fix
+   - `docs:` Documentation changes
+   - `style:` Code style changes (formatting, etc.)
+   - `refactor:` Code refactoring
+   - `test:` Adding tests
+   - `chore:` Maintenance tasks
 
-### Commit Message Format
+## 🎨 Style Guidelines
+
+### TypeScript/React
+
+- Use TypeScript for all new files
+- Follow functional component patterns
+- Use proper typing (avoid `any`)
+- Keep components focused and reusable
+
+### Styling
+
+- Use Tailwind CSS utility classes
+- Follow the existing color scheme
+- Maintain responsive design
+- Use the `cn()` utility for conditional classes
+
+### File Structure
 
 ```
-type(scope): subject
-
-body (optional)
-
-footer (optional)
+src/
+├── app/          # Next.js pages
+├── scenes/       # Remotion video scenes
+├── components/   # Reusable React components
+├── api/          # API integrations
+├── utils/        # Utility functions
+└── types/        # TypeScript types
 ```
 
-**Types:**
+### Naming Conventions
 
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation changes
-- `style`: Code style changes (formatting, etc.)
-- `refactor`: Code refactoring
-- `test`: Adding or updating tests
-- `chore`: Maintenance tasks
-
-**Example:**
-
-```
-feat(scenes): add new contribution timeline scene
-
-- Implemented animated timeline visualization
-- Added smooth transitions between years
-- Integrated with GitHub API data
-
-Closes #123
-```
-
-## 📝 Style Guidelines
-
-### TypeScript Style Guide
-
-- Use TypeScript for all new code
-- Follow existing patterns in the codebase
-- Use meaningful variable and function names
-- Add JSDoc comments for complex functions
-- Prefer functional components with hooks
-
-### React/Remotion Guidelines
-
-- Keep components small and focused
-- Use proper prop types
-- Leverage Remotion's interpolation for smooth animations
-- Follow the composition pattern
-
-### CSS/Tailwind Guidelines
-
-- Use Tailwind utility classes
-- Keep custom CSS minimal
-- Follow the existing design system
-- Ensure responsive design
+- **Components**: PascalCase (`BasicStats.tsx`)
+- **Utilities**: camelCase (`cn.ts`)
+- **Constants**: UPPER_SNAKE_CASE
+- **CSS classes**: kebab-case or Tailwind utilities
 
 ## 🧪 Testing
+
+Before submitting:
 
 ```bash
 # Run linter
 npm run lint
 
-# Build project
+# Build the project
 npm run build
 
-# Test rendering
-npm run render
+# Test Remotion renders
+npm run studio
 ```
 
-## 📚 Resources
+## 📦 Adding New Video Scenes
 
-- [Remotion Documentation](https://www.remotion.dev/docs)
-- [Next.js Documentation](https://nextjs.org/docs)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+1. Create scene in `src/scenes/YourScene.tsx`
+2. Add proper TypeScript types
+3. Include AshrafMorningstar credit comment
+4. Register in `src/remotion/index.ts`
+5. Update README.md with scene description
+6. Test in Remotion Studio
 
-## 🎯 Priority Areas
+Example scene template:
 
-We're especially interested in contributions in these areas:
+```tsx
+/**
+ * Created by AshrafMorningstar
+ * https://github.com/AshrafMorningstar
+ */
+import React from "react";
+import { AbsoluteFill } from "remotion";
 
-- New animation scenes
-- Additional data source integrations
-- Performance optimizations
-- Documentation improvements
-- Bug fixes
+export const YourScene: React.FC = () => {
+  return (
+    <AbsoluteFill className="bg-slate-950">{/* Your content */}</AbsoluteFill>
+  );
+};
+```
 
-## ❓ Questions?
+## 🎬 Video Scene Guidelines
 
-Feel free to open an issue with the `question` label or reach out to [@AshrafMorningstar](https://github.com/AshrafMorningstar).
+- **Duration**: 5-10 seconds (150-300 frames at 30fps)
+- **Resolution**: 1920x1080 (Full HD)
+- **Performance**: Optimize for smooth 30fps playback
+- **Accessibility**: Use readable fonts and contrast
+- **Branding**: Maintain the violet/cyan color scheme
+
+## 🐛 Bug Fix Guidelines
+
+1. **Reproduce the bug** consistently
+2. **Write a test** that fails due to the bug
+3. **Fix the bug**
+4. **Verify the test passes**
+5. **Check for regressions**
+
+## 💡 Feature Development Guidelines
+
+1. **Discuss first** - Open an issue before major changes
+2. **Keep it focused** - One feature per PR
+3. **Document thoroughly** - Update docs and add comments
+4. **Consider performance** - Profile and optimize
+5. **Maintain compatibility** - Don't break existing features
+
+## 📄 License
+
+By contributing, you agree that your contributions will be licensed under the MIT License.
+
+## 🙏 Recognition
+
+Contributors will be:
+
+- Listed in the README.md
+- Mentioned in release notes
+- Credited in the project documentation
+
+## 📧 Questions?
+
+Feel free to reach out:
+
+- Open a GitHub Discussion
+- Create an issue with the `question` label
+- Contact [@AshrafMorningstar](https://github.com/AshrafMorningstar)
 
 ---
 
-**Thank you for contributing to DevMetrics Pro AI! 🚀**
+**Thank you for making DevMetrics Pro AI better! 🚀**
 
-_Created by [AshrafMorningstar](https://github.com/AshrafMorningstar)_
+_Created by AshrafMorningstar_
