@@ -1,65 +1,75 @@
-import Image from "next/image";
+/**
+ * Created by AshrafMorningstar
+ * https://github.com/AshrafMorningstar
+ */
+import React from "react";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen flex flex-col items-center justify-center p-8 relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-violet-600/20 blur-[120px] rounded-full" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-cyan-600/20 blur-[120px] rounded-full" />
+      </div>
+
+      <div className="z-10 text-center max-w-5xl space-y-8 glass-panel p-12 rounded-3xl border-t border-white/10 shadow-2xl">
+        <div className="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold tracking-wider text-violet-300 uppercase mb-4">
+          v1.0.0 Beta Available Now
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <h1 className="text-6xl md:text-8xl font-black bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-slate-400 tracking-tighter leading-tight pb-2">
+          DevMetrics<span className="text-violet-500">Pro</span>
+        </h1>
+        <p className="text-xl md:text-2xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">
+          AI-Enhanced Developer Analytics Platform. <br />
+          Transform your GitHub data into stunning cinematic visualizations.
+        </p>
+
+        <div className="flex flex-col md:flex-row gap-4 justify-center items-center pt-8">
+          <button className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-slate-200 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.3)] min-w-[200px]">
+            Connect GitHub
+          </button>
+          <button className="px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-white/10 hover:border-white/20 transition-all backdrop-blur-sm min-w-[200px]">
+            View Gallery
+          </button>
         </div>
-      </main>
-    </div>
+
+        <div className="grid md:grid-cols-3 gap-8 pt-16 text-left border-t border-white/5 mt-12">
+          {[
+            {
+              title: "AI Insights",
+              desc: "Deep analysis using GPT-4 for code patterns and growth trajectories.",
+            },
+            {
+              title: "Cinematic 4K",
+              desc: "Render 60fps videos perfect for LinkedIn and portfolios.",
+            },
+            {
+              title: "Multi-Platform",
+              desc: "Unified analytics from GitHub, GitLab & StackOverflow.",
+            },
+          ].map((feature, i) => (
+            <div
+              key={i}
+              className="p-6 rounded-2xl bg-white/0 hover:bg-white/5 transition-all border border-transparent hover:border-white/5 group"
+            >
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-violet-500/20 to-cyan-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-2 h-2 rounded-full bg-white/50" />
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">
+                {feature.title}
+              </h3>
+              <p className="text-sm text-slate-400 leading-relaxed">
+                {feature.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <footer className="absolute bottom-8 text-slate-500 text-sm">
+        © 2025 DevMetrics Pro. Designed by AshrafMorningstar.
+      </footer>
+    </main>
   );
 }
