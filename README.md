@@ -1,44 +1,33 @@
-# DevMetrics Pro AI - Premium Developer Analytics Platform
+# ⚡ DevMetrics Pro AI: v2.0 Ultimate Edition
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-2.0.0_Ultimate-8b5cf6.svg)
+![Theme](https://img.shields.io/badge/theme-Cyberpunk_Holographic-06b6d4.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-**Created by [AshrafMorningstar](https://github.com/AshrafMorningstar)**
+> **"The Best of Best" Developer Analytics Platform**
 
-Transform your GitHub contributions into stunning cinematic 4K visualizations powered by AI. DevMetrics Pro AI goes beyond static badges to create portfolio-ready video content that analyzes your growth, skills, and coding journey with breathtaking aesthetics.
+Transform your GitHub contributions into cinematic, 4K holographic visualizations. This isn't just a stats card; it's a portfolio-grade video production engine powered by AI.
 
 ---
 
-## ✨ Features
+## 🌟 What's New in v2.0?
 
-### 🎬 Cinematic Visualizations
+We've completely overhauled the engine to deliver a premium, "Sci-Fi/Cyberpunk" aesthetic.
 
-- **Time-Lapse Evolution**: Watch your commit history grow year by year with dynamic animations
-- **Skills Radar**: Interactive 3D spider charts showcasing your language proficiency
-- **Basic Stats**: Elegant animated cards displaying your key metrics
-- **Contribution Flow**: Particle-based visualization of your coding activity
+### 🎨 Visuals: "Neon Glass" Engine
 
-### 🤖 AI-Powered Insights
+- **Holographic Cards**: Stats float in 3D space with real-time glassmorphism and glare effects.
+- **Cinematic Lighting**: Dynamic mesh gradients and "scanline" overlays for a retro-future look.
+- **Particle Systems**: 60fps smooth animations for every metric.
 
-- Deep analysis using OpenAI GPT-4
-- Productivity trend detection
-- Skill growth trajectory mapping
-- Personalized recommendations for career development
+### 🎮 New Scenes
 
-### 🎨 Premium Design
-
-- Glassmorphism UI components
-- Cinematic gradient backgrounds
-- Smooth spring-based animations
-- 4K resolution support (1920x1080)
-- 60fps rendering capability
-
-### 🔗 Multi-Platform Integration
-
-- GitHub (primary)
-- GitLab support
-- Stack Overflow analytics
-- NPM package statistics
+| Scene                     | Description                                                                                        |
+| ------------------------- | -------------------------------------------------------------------------------------------------- |
+| **⚔️ RPG Hero Stats**     | Gamifies your profile! See your "STR" (Code Volume), "INT" (Algorithm Complexity), and "XP" level. |
+| **🧠 Strategic Insights** | AI-driven tactical map showing where you focus your coding energy (Velocity, Focus Area).          |
+| **🌌 Skills Universe 3D** | A rotating 3D star system where every planet is a language you've mastered.                        |
+| **🧬 Code DNA**           | Visualizes the "genetic structure" of your commit history.                                         |
 
 ---
 
@@ -47,136 +36,58 @@ Transform your GitHub contributions into stunning cinematic 4K visualizations po
 ### Prerequisites
 
 - Node.js 18+
-- npm or yarn
-- GitHub Personal Access Token
-- OpenAI API Key (optional, for AI features)
+- GitHub Token (for fetching real data)
+- OpenAI Key (optional, for AI insights)
 
 ### Installation
 
-1. **Clone the repository**
+```bash
+git clone https://github.com/AshrafMorningstar/devmetrics-pro-ai.git
+cd devmetrics-pro-ai
+npm install
+```
 
-   ```bash
-   git clone https://github.com/AshrafMorningstar/devmetrics-pro-ai.git
-   cd devmetrics-pro-ai
-   ```
+### 🎬 Rendering Your Cinematic Video
 
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Configure environment variables**
-
-   Create a `.env.local` file in the root directory:
-
-   ```env
-   GITHUB_TOKEN=your_github_personal_access_token
-   OPENAI_API_KEY=your_openai_api_key
-   ```
-
-4. **Run the development server**
-
-   ```bash
-   npm run dev
-   ```
-
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-5. **Launch Remotion Studio**
-   ```bash
-   npm run studio
-   ```
-   This opens the video editor to preview and customize animations.
-
----
-
-## 🎥 Rendering Videos
-
-### Render a specific composition:
+**1. The "Ultimate" Main Sequence (1 min)**
+This generates the full cinematic experience featuring all scenes.
 
 ```bash
-npm run render
+npm run render -- MainSequence out/ultimate-showcase.mp4
 ```
 
-### Available Compositions:
+**2. Individual Scenes**
 
-- `GitHubStats` - Basic statistics card (5 seconds)
-- `SkillsRadar` - Skills proficiency radar (5 seconds)
-- `TimeLapse` - Simple year-by-year growth (10 seconds)
-- `TimeLapseEvolution` - Advanced evolution timeline (10 seconds)
+```bash
+# Basic Stats Card (Holographic)
+npm run render -- GitHubStats out/stats.mp4
 
----
-
-## 🛠️ Tech Stack
-
-| Category          | Technology                |
-| ----------------- | ------------------------- |
-| **Framework**     | Next.js 16, React 19      |
-| **Animation**     | Remotion 4.0              |
-| **Styling**       | Tailwind CSS v4           |
-| **AI/ML**         | OpenAI API                |
-| **Language**      | TypeScript                |
-| **UI Components** | Lucide React Icons        |
-| **Utilities**     | Zod, clsx, tailwind-merge |
-
----
-
-## 📁 Project Structure
-
-```
-devmetrics-pro-ai/
-├── src/
-│   ├── app/              # Next.js app directory
-│   │   ├── globals.css   # Global styles & design tokens
-│   │   ├── layout.tsx    # Root layout
-│   │   └── page.tsx      # Landing page
-│   ├── scenes/           # Remotion video scenes
-│   │   ├── BasicStats.tsx
-│   │   ├── SkillsRadar.tsx
-│   │   ├── TimeLapse.tsx
-│   │   └── TimeLapseEvolution.tsx
-│   ├── remotion/         # Remotion configuration
-│   │   ├── Root.tsx      # Composition registry
-│   │   └── index.ts      # Entry point
-│   ├── api/              # API integrations
-│   ├── ai/               # AI analysis modules
-│   ├── components/       # Reusable React components
-│   └── utils/            # Utility functions
-├── public/               # Static assets
-├── package.json
-└── README.md
+# RPG Character Sheet
+npm run render -- RPGHeroStats out/rpg.mp4
 ```
 
 ---
 
-## 🎨 Customization
+## 🛠️ Configuration
 
-### Modify Color Scheme
+Create a `.env.local` file to connect your accounts:
 
-Edit `src/app/globals.css` to change the color palette:
-
-```css
-:root {
-  --primary: #8b5cf6; /* Violet */
-  --secondary: #06b6d4; /* Cyan */
-  --accent: #f472b6; /* Pink */
-}
+```env
+GITHUB_TOKEN=ghp_your_token_here
+OPENAI_API_KEY=sk_your_key_here
 ```
 
-### Add New Scenes
+### Customizing the Theme
 
-1. Create a new file in `src/scenes/YourScene.tsx`
-2. Register it in `src/remotion/Root.tsx`:
+You can tweak the cyberpunk aesthetics in `src/app/globals.css` or pass props to the composition:
 
-```tsx
+```typescript
+// src/remotion/Root.tsx
 <Composition
-  id="YourScene"
-  component={YourScene}
-  durationInFrames={150}
-  fps={30}
-  width={1920}
-  height={1080}
+  id="MainSequence"
+  defaultProps={{
+    theme: "cyberpunk", // Try 'minimal' or 'retro' if available
+  }}
 />
 ```
 
@@ -184,15 +95,7 @@ Edit `src/app/globals.css` to change the color palette:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
+We welcome contributions to the Ultimate Edition! please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
 ## 📄 License
 
@@ -200,28 +103,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
-
-- Remotion team for the amazing video framework
-- Vercel for Next.js
-- OpenAI for GPT-4 API
-- GitHub for the GraphQL API
-
----
-
-## 📧 Contact
-
-**AshrafMorningstar**
-
-- GitHub: [@AshrafMorningstar](https://github.com/AshrafMorningstar)
-- Project Link: [https://github.com/AshrafMorningstar/devmetrics-pro-ai](https://github.com/AshrafMorningstar/devmetrics-pro-ai)
-
----
-
 <div align="center">
-
-**Made with ❤️ by AshrafMorningstar**
-
-⭐ Star this repo if you find it useful!
-
+  <p>Wrapped with ❤️ by <strong>AshrafMorningstar</strong></p>
+  <p><em>"Build. Ship. Evolve."</em></p>
 </div>
