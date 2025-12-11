@@ -33,15 +33,38 @@ export interface AnalyticsData {
   achievements?: any[];
 }
 
+export interface RPGStats {
+  level: number;
+  class: "Code Wizard" | "Bug Hunter" | "Architect" | "Speedster" | "Paladin";
+  attributes: {
+    strength: number;
+    dexterity: number;
+    constitution: number;
+    intelligence: number;
+    wisdom: number;
+    charisma: number;
+  };
+  experience: {
+    current: number;
+    nextLevel: number;
+    progress: number;
+  };
+}
+
 export interface DeveloperData {
-  contributions: any;
-  repositories: any;
-  skills: any;
+  username: string;
+  contributions: ContributionsCollection;
+  repositories: Repository[];
+  startDate: string;
+  endDate: string;
+  rpgStats?: RPGStats;
+  skills?: any[];
+  achievements?: any[];
 }
 
 export interface Repository {
   name: string;
   languages: string[];
-  stars: number;
+  stargazersCount: number;
   features: string[];
 }

@@ -70,7 +70,7 @@ export const generateProjectDescription = async (
     Write an engaging project description for:
     Name: ${repo.name}
     Tech: ${repo.languages.join(", ")}
-    Stars: ${repo.stars}
+    Stars: ${repo.stargazersCount}
     Key features: ${repo.features.join(", ")}
     
     Style: Technical but engaging, highlight unique aspects

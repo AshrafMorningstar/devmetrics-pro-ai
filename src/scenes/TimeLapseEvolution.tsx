@@ -11,19 +11,7 @@ import {
   spring,
 } from "remotion";
 
-interface AnalyticsData {
-  contributions: {
-    contributionCalendar: {
-      totalContributions: number;
-      weeks: any[];
-    };
-  };
-  startDate: string;
-  endDate: string;
-  skills: any[];
-  timeline: any[];
-  achievements: any[];
-}
+import { DeveloperData } from "../types";
 
 const mockHistory = [
   { year: 2020, commits: 150, color: "from-blue-500 to-cyan-400" },
@@ -34,7 +22,7 @@ const mockHistory = [
   { year: 2025, commits: 3500, color: "from-violet-500 to-purple-400" },
 ];
 
-export const TimeLapseEvolution: React.FC<{ data: AnalyticsData }> = ({
+export const TimeLapseEvolution: React.FC<{ data: DeveloperData }> = ({
   data,
 }) => {
   const frame = useCurrentFrame();
