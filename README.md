@@ -1,143 +1,83 @@
-/*
- Copyright (c) 2026 Ashraf Morningstar
- These are personal recreations of existing projects, developed by Ashraf Morningstar
- for learning and skill development.
- Original project concepts remain the intellectual property of their respective creators.
- Repository: https://github.com/AshrafMorningstar
-*/
-
-# ⚡ DevMetrics Pro AI: v2.0 Ultimate Edition
-
-![Version](https://img.shields.io/badge/version-2.0.0_Ultimate-8b5cf6.svg)
-![Theme](https://img.shields.io/badge/theme-Cyberpunk_Holographic-06b6d4.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-
-> **"The Best of Best" Developer Analytics Platform**
-
-Transform your GitHub contributions into cinematic, 4K holographic visualizations. This isn't just a stats card; it's a portfolio-grade video production engine powered by AI.
-
----
-
-## 🌟 What's New in v2.0?
-
-We've completely overhauled the engine to deliver a premium, "Sci-Fi/Cyberpunk" aesthetic.
-
-### 🎨 Visuals: "Neon Glass" Engine
-
-- **Holographic Cards**: Stats float in 3D space with real-time glassmorphism and glare effects.
-- **Cinematic Lighting**: Dynamic mesh gradients and "scanline" overlays for a retro-future look.
-- **Particle Systems**: 60fps smooth animations for every metric.
-
-### 🎮 New Scenes
-
-| Scene                     | Description                                                                                        |
-| ------------------------- | -------------------------------------------------------------------------------------------------- |
-| **⚔️ RPG Hero Stats**     | Gamifies your profile! See your "STR" (Code Volume), "INT" (Algorithm Complexity), and "XP" level. |
-| **🧠 Strategic Insights** | AI-driven tactical map showing where you focus your coding energy (Velocity, Focus Area).          |
-| **🌌 Skills Universe 3D** | A rotating 3D star system where every planet is a language you've mastered.                        |
-| **🧬 Code DNA**           | Visualizes the "genetic structure" of your commit history.                                         |
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Node.js 18+
-- GitHub Token (for fetching real data)
-- OpenAI Key (optional, for AI insights)
-
-### Installation
-
-```bash
-git clone https://github.com/AshrafMorningstar/devmetrics-pro-ai.git
-cd devmetrics-pro-ai
-npm install
-```
-
-### 🎬 Rendering Your Cinematic Video
-
-**1. The "Ultimate" Main Sequence (1 min)**
-This generates the full cinematic experience featuring all scenes.
-
-```bash
-npm run render -- MainSequence out/ultimate-showcase.mp4
-```
-
-**2. Individual Scenes**
-
-```bash
-# Basic Stats Card (Holographic)
-npm run render -- GitHubStats out/stats.mp4
-
-# RPG Character Sheet
-npm run render -- RPGHeroStats out/rpg.mp4
-```
-
----
-
-## 🛠️ Configuration
-
-Create a `.env.local` file to connect your accounts:
-
-```env
-GITHUB_TOKEN=ghp_your_token_here
-OPENAI_API_KEY=sk_your_key_here
-```
-
-### Customizing the Theme
-
-You can tweak the cyberpunk aesthetics in `src/app/globals.css` or pass props to the composition:
-
-```typescript
-// src/remotion/Root.tsx
-<Composition
-  id="MainSequence"
-  defaultProps={{
-    theme: "cyberpunk", // Try 'minimal' or 'retro' if available
-  }}
-/>
-```
-
----
-
-## 🤝 Contributing
-
-We welcome contributions to the Ultimate Edition! please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 <div align="center">
-  <p>Wrapped with ❤️ by <strong>AshrafMorningstar</strong></p>
-  <p><em>"Build. Ship. Evolve."</em></p>
+
+# :star: Devmetrics Pro Ai :star:
+
+[![GitHub stars](https://img.shields.io/github/stars/AshrafMorningstar/devmetrics-pro-ai?style=for-the-badge&color=orange)](https://github.com/AshrafMorningstar/devmetrics-pro-ai/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/AshrafMorningstar/devmetrics-pro-ai?style=for-the-badge&color=blue)](https://github.com/AshrafMorningstar/devmetrics-pro-ai/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/AshrafMorningstar/devmetrics-pro-ai?style=for-the-badge&color=red)](https://github.com/AshrafMorningstar/devmetrics-pro-ai/issues)
+[![GitHub license](https://img.shields.io/github/license/AshrafMorningstar/devmetrics-pro-ai?style=for-the-badge&color=green)](./LICENSE)
+![Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=for-the-badge)
+
+**Automated, High-Performance devmetrics pro ai Project**
+
+[View Demo (If Applicable)](#) • [Report Bug](https://github.com/AshrafMorningstar/devmetrics-pro-ai/issues) • [Request Feature](https://github.com/AshrafMorningstar/devmetrics-pro-ai/issues)
+
 </div>
 
-
 ---
 
-## 📜 Copyright & License
+## :rocket: Overview
 
-© 2026 Ashraf Morningstar. All Rights Reserved.
+**devmetrics-pro-ai** is a state-of-the-art implementation utilizing Node.js, React, Next.js, Tailwind CSS, TypeScript. Designed for developers looking for robust, scalable solutions in Open Source, Developer Tools, Coding Best Practices, Software Engineering, React.js, Hooks, Components, Virtual DOM, SPA, Frontend Architecture, Open Source, Developer Tools, Coding Best Practices, Software Engineering, Open Source, Developer Tools, Coding Best Practices, Software Engineering, Open Source, Developer Tools, Coding Best Practices, Software Engineering.
 
-**Educational Disclaimer:** This is a personal recreation of an existing project concept, developed for learning and skill development purposes. The original project concept remains the intellectual property of its respective creator(s).
+This project is a high-performance, open-source solution designed for developers and enthusiasts. It implements modern best practices and is optimized for efficiency and scalability.
 
-**License:** MIT License - See [LICENSE](./LICENSE) file for details.
+## :sparkles: Key Features
 
-**Developer:** [Ashraf Morningstar](https://github.com/AshrafMorningstar)
+- :white_check_mark: **High Performance:** Optimized for speed and low latency.
+- :white_check_mark: **Scalable Architecture:** Built to handle growth effortlessly.
+- :white_check_mark: **Modern Tech Stack:** Utilizes latest standards in Node.js, React, Next.js, Tailwind CSS, TypeScript.
+- :white_check_mark: **Developer Friendly:** Clean code, well-documented, and easy to extend.
 
-**Portfolio:** Explore more projects at [github.com/AshrafMorningstar](https://github.com/AshrafMorningstar)
+## :hammer_and_wrench: Technologies Used
+
+![](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+
+## :floppy_disk: Installation & Usage
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/AshrafMorningstar/devmetrics-pro-ai.git
+   cd devmetrics-pro-ai
+   ```
+
+2. **Install dependencies:**
+    npm install
+
+3. **Run the application:**
+    npm start
+
+## :open_file_folder: Project Structure
+
+```
+devmetrics-pro-ai/
+├── src/          # Source code
+├── assets/       # Images and static files
+├── README.md     # Project documentation
+└── LICENSE       # License information
+```
+
+## :handshake: Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
+
+## :bust_in_silhouette: Author
+
+**Ashraf Morningstar**
+
+- **GitHub:** [@AshrafMorningstar](https://github.com/AshrafMorningstar)
+- **Twitter:** [@AMS_Morningstar](https://twitter.com/@AMS_Morningstar)
+- **Portfolio:** [AshrafMorningstar Projects](https://github.com/AshrafMorningstar?tab=repositories)
+
+## :page_facing_up: License
+
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-
-### 🤝 Connect & Contribute
-
-Found this helpful? Give it a ⭐️ on GitHub!
-
-- 💼 Company: MORNINGSTARCONSTRUCTION
-- 📍 Location: India
-- 🐦 Twitter: [@AMS_Morningstar](https://twitter.com/AMS_Morningstar)
-- 📧 Email: ashrafmorningstar@gmail.com
+<div align="center">
+  <p>If you find this project useful, please give it a <b>Star</b> :star:!</p>
+  <sub>Built with ❤️ by Ashraf Morningstar</sub>
+</div>
